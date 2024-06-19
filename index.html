@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交流小屋</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+<body style="background-color: antiquewhite;">
+
+    <header>
+        <nav class="daohanglan">
+            <ul>
+                
+                <li><a href="index.html">首页</a></li>
+                <li><a href="列表/C++.html">C++</a></li>
+                <li><a href="列表/JAVA.html">JAVA</a></li>
+                <li><a href="关于我们.html">关于我们</a></li>
+                <li><a href="联系方式.html">联系方式</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <video src="video/bg.mp4" muted="muted" autoplay="autoplay"loop="loop" ></video>
+
+    <div>
+        <h1 id="jk">
+            <span class="text" ></span>
+        </h1>
+    </div>
+
+    <div class="div1">
+        <div class="div2" style="width: 20%; margin-right: 1%;">
+            <center>
+                <img src="img/tou.jpg" width="80%px" style="margin-top: 50px;">
+                <h1>Crusadern</h1>
+            </center>   
+        </div>
+        <div class="div2" style="width: 79%;">
+            <h2 style="margin-left: 20px; margin-right: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎来到我的个人博客！这里是我分享思考、记录成长和探索世界的小天地。跟随我的文字和图片，一起感受生活的美好，共同学习进步。在这里，你可以找到关于技术、旅行、阅读等多元内容的分享。希望我的博客能给你带来一丝启发和愉悦。请随意浏览，留下你的足迹吧！😍😍😍😍😍😍😍😍</h2>
+        </div>
+        <div class="div3" style="margin-right: 0.8%;">
+            <div class="AnNiu"><h1 style="font-size: 200px;"><a href="列表/JAVA.html">JAVA</a></h1></div>
+        </div>
+        <div class="div3">
+            <div class="AnNiu"><h1 style="font-size: 200px;"><a href="列表/C++.html">C++</a></h1></div>
+        </div>
+        <div class="div3" style="margin-right: 0.8%;">
+            <div class="AnNiu"><h1 style="font-size: 200px;"><a href="数据库作业/">数据库作业</a></h1></div>
+        </div>
+        <div class="div3">
+            <div class="AnNiu"><h1 style="font-size: 200px;"><a href="服务器作业/">服务器作业</a></h1></div>
+        </div>
+        <div class="div3" style="margin-right: 0.8%;">
+            <div class="AnNiu"><h1 style="font-size: 200px;"><a href="数据库作业/">python作业</a></h1></div>
+        </div>
+        <div class="div3">
+            <div class="AnNiu"><h1 style="font-size: 200px;"><a href="服务器作业/">web作业</a></h1></div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+     const text = document.querySelector('.text');
+     const txt  =["草稿纸上不只有公式","还有没说出口的爱意。","欢迎来到技术交流小屋"]; 
+     var index=0;
+     var xiaBiao= 0;
+     var huan = true;
+     setInterval(function(){
+         if(huan){             
+             text.innerHTML = txt[xiaBiao].slice(0,++index);
+         }
+         else{
+             text.innerHTML = txt[xiaBiao].slice(0,index--);
+         }
+         if(index==txt[xiaBiao].length+3)
+         {
+             huan = false;
+         }
+         else if(index<0)
+         {   
+             index = 0;
+             huan = true;
+             xiaBiao++;
+             if(xiaBiao>=txt.length)
+             {   
+                 xiaBiao=0; 
+             }
+         }
+
+     },200)
+
+ </script
+
+</body>
+</html>

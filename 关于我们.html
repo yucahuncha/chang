@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们</title>
+    <style>
+        .abc{
+            color: #ccc;
+        }
+        .twd{
+            margin-top: 10px;
+            width: 100px;
+            height: 100px;
+            border: 10px;
+            border-radius: 10px;
+        }
+        a:link{
+            color: thistle;
+            text-decoration: none;
+        }
+        a:visited{
+            color: thistle;
+            text-decoration: none;
+        }
+        a:hover{
+            color: red;
+            text-decoration: none;
+        }
+        a:active{
+            color:turquoise;
+            text-decoration: none;
+        }
+        .qwe{
+            color: seashell;
+            background: rgba(0, 0, 0, 0.6);
+            width: 100px;
+            height: 30px;
+            border-radius: 5px;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: inline-block;    
+        }
+        .modiv{       
+            background: rgba(0, 0, 0, 0.5);           /*设置div的背景颜色*/
+            width: 1000px;                      /*宽*/
+            height: 500px;                      /*高*/
+            border: 1px solid none;
+            border-radius: 30px;
+            margin-left: 10%;
+            margin-top: 200px;
+        }
+        body{
+            background-image: url(img/bg3.jpg);
+            background-size: cover;                /*背景自适应铺满屏幕*/
+        }
+        p{
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="modiv" align="center">              <!--整个div的内容居中-->
+        <img src="img/tou.jpg" alt="图片丢失" class="twd">            <!--在div中嵌套图片，大小为100x100-->
+        <h1 align="center" class="abc">Crusadern</h1>             <!--标题-->
+        <div class="qwe">
+            <a href="index.html" target="_blanks">主页</a>
+        </div> 
+        <div class="qwe">
+            <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2168174343">QQ</a>
+        </div>
+        <div class="qwe">
+            <a href="#">微信</a>
+        </div>
+        <p align="margin-bottom">当天空中出现乌云的时候，我们就指出：这不过是暂时的现象，黑暗即将过去，曙光即在前头</p>                        
+    </div>
+</body>
+</html> 
